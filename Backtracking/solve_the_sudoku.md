@@ -32,6 +32,6 @@ Output :
 8 5 1 7 9 2 6 4 3
 1 3 8 9 4 7 2 5 6
 6 9 2 3 5 1 8 7 4
-  		7 4 5 2 8 6 3 1 9
+7 4 5 2 8 6 3 1 9
 Explanation :
 The goal is to print the solution of Sudoku, i.e., to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contains all of the digits from 1 to 9.  Each row, column of 3*3 box of the output matrix contains unique numbers.
