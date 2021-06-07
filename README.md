@@ -16,7 +16,6 @@ This project contains the carefully compiled Data Structures &amp; Algorithm que
 
 # Code Structure
 * [Array](/Array)
-<!-- * [2D_Array](/2D_Array) -->
 * [String](/string)
 * [Linked List](/Linked_list)
 * [Stack](/Stack)
@@ -32,6 +31,48 @@ This project contains the carefully compiled Data Structures &amp; Algorithm que
 * [Hashing](/Algorithm/Hashing)
 * [Recursion](/Algorithm/Recursion)
 * [Searching and Sorting](/Algorithm/Searching_Sorting)
+
+
+## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR PLACEMENTS IN 2020
+
+### New
+1. Athena health
+2. Salesforce
+3. Publicis sapient
+4. Commvault system
+5. Addverb
+6. Sandisk
+7. Bank Of America
+8. Barclays
+9. Oracle
+10. Hexaware Technology
+
+### Old
+1. American Express
+2. Fractal
+3. Cisco
+4. IBM
+5. TCS
+6. Accenture
+7. HSBC
+8. Make My Trip
+9. TCS Digital
+10. Delloite
+11. Flipkart
+12. Informatica
+13. UBS
+14. Goldmann Sachs
+15. McKinsey and Co
+16. Walmart
+
+## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR INTERNSHIPS IN 2020
+
+Flipkart
+Goldman Sachs
+American Express
+Barclays
+Oracle
+
 
 
 The questions are classified according to the topics. Students are free to submit solutions for any of the mentioned language. The allowed languages are:
