@@ -1,6 +1,9 @@
 # Code-Crossroad
-This project contains the carefully compiled Data Structures &amp; Algorithm questions asked by the companies that visit Banasthali Vidyapith on-campus.
-<!-- <img src="https://i.ibb.co/SsnRRrH/algotree.png" alt="algotree.png" width="1080" /> -->
+Hey everyone! 👋
+**Code Crossroad is the first open source project of Google Developer Student Clubs - Banasthali Vidyapith.** It's the ultimate Coder's Conclave of all time! Contribute to the project, and submit the solutions and have a chance to be featured as Contributor in this project. 
+
+This project contains the carefully compiled Data Structures & Algorithm questions asked by the companies that visit Banasthali Vidyapith on-campus.
+
 
 [![Issues](https://img.shields.io/github/issues/DSC-Banasthali-Vidyapith/Code-Crossroad)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/issues)
 [![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
