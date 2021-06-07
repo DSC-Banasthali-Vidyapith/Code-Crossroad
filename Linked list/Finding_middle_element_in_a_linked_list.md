@@ -14,5 +14,5 @@ Constraints:
 1 <= N <= 5000
 
 
-DIFFICULTY LEVEL :EASY
-ASKED BY : Microsoft, Amazon, Flipkart, MakeMyTrip
+### DIFFICULTY LEVEL :EASY
+### ASKED BY : Microsoft, Amazon, Flipkart, MakeMyTrip
