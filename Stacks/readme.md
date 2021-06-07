@@ -2,5 +2,5 @@
 
 ## Questions :
 
--   [The Celebrity Problem](/The_Celebrity_Problem.md)
--   [Parenthesis Checker](/Parenthesis_Checker.md)
+1.  [The Celebrity Problem](/The_Celebrity_Problem.md)
+2.   [Parenthesis Checker](/Parenthesis_Checker.md)
