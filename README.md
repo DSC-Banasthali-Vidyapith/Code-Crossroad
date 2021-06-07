@@ -16,14 +16,14 @@ This project contains the carefully compiled Data Structures &amp; Algorithm que
 
 # Code Structure
 * [Array](/Array)
-* [2D_Array](/2D_Array)
+<!-- * [2D_Array](/2D_Array) -->
 * [String](/string)
 * [Linked List](/Linked_list)
 * [Stack](/Stack)
 * [Queue](/Queue)
 * [Tree](/Tree)
 * [Graph](/Graph)
-* [Trie](/Trie)
+
 ### Algorithms
 * [Backtracking](/Algorithm/Backtracking)
 * [Bit Manipulation](/Algorithm/Bit_manipulation)
@@ -31,9 +31,9 @@ This project contains the carefully compiled Data Structures &amp; Algorithm que
 * [Greedy](/Algorithm/Greedy)
 * [Hashing](/Algorithm/Hashing)
 * [Recursion](/Algorithm/Recursion)
-* [Number Theory](/Algorithm/Number_theory)
+<!-- * [Number Theory](/Algorithm/Number_theory) -->
 * [Searching and Sorting](/Algorithm/Searching_Sorting)
-* [Special Algorithm](/Algorithm/Special_algo)
+<!-- * [Special Algorithm](/Algorithm/Special_algo) -->
 
 The questions are classified according to the topics. Students are free to submit solutions for any of the mentioned language. The allowed languages are:
 * Java
