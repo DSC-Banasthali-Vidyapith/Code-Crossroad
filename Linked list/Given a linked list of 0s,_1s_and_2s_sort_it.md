@@ -19,6 +19,6 @@ Constraints:
 1 <= N <= 103
 
 
-DIFFICULTY LEVEL : MEDIUM
-ASKED BY : Flipkart, Accolite
+### DIFFICULTY LEVEL : MEDIUM
+### ASKED BY : Flipkart, Accolite
 
