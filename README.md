@@ -35,7 +35,7 @@ This project contains the carefully compiled Data Structures &amp; Algorithm que
 * [Searching and Sorting](/Algorithm/Searching_Sorting)
 * [Special Algorithm](/Algorithm/Special_algo)
 
-The questions are classified according to the topics and languages. Students are free to submit solutions for any of the mentioned language. The allowed languages are:
+The questions are classified according to the topics. Students are free to submit solutions for any of the mentioned language. The allowed languages are:
 * Java
 * C
 * C++
@@ -64,14 +64,14 @@ You may go through these guidelines and contribute accordingly:
 
 ## Where to upload the files 📂
 
-* Your files should be uploaded inside the **code** folder into the corresponding language folder (For instance, if you wrote code for an Algorithm Implementation in Java, it goes inside the Code/Java folder).
-* **Under no circumstances create new folders within the language folders to upload your code unless specifically told to do so**.
+* Your files should be uploaded inside the same folder as the question and name your file as **Question_number.cpp** (assuming that the code submitted is written in cpp)
+* **Under no circumstances create new folders within the respective topic folders to upload your code unless specifically told to do so**.
 * Edit the corresponding README.md file to add the link to your code in the corresponding section in **alphabatical order**.[(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
 
 
 The value of a strong contribution stays beyond everything and gives you satisfaction 👍.
 
-# Maintainers 😇
+<!-- # Maintainers 😇
 
 <table>
   <tbody><tr>
@@ -91,9 +91,9 @@ Raksha Jain </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tre
 Yasharth Dubey </b></sub></a><br><a href="https://github.com/Algo-Phantoms/Algo-Tree/commits?author=yasharth291" title="Code">💻 🖋</a></td></a></td>
     
 </tbody></tr></table>
-
+ -->
 # Code of Conduct
-You can find our Code of Conduct [here](https://github.com/Algo-Phantoms/Algo-Tree/blob/main/CODE_OF_CONDUCT.md).
+You can find our Code of Conduct [here](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/blob/main/CODE_OF_CONDUCT.md).
 
 # License
 
