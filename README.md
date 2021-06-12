@@ -36,35 +36,33 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 * [Searching and Sorting](/Algorithm/Searching_Sorting)
 
 
-## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR PLACEMENTS IN 2020
+## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR PLACEMENTS 
 
 - Athena health
 - Salesforce
-3. Publicis sapient
-4. Commvault system
-5. Addverb
-6. Sandisk
-7. Bank Of America
-8. Barclays
-9. Oracle
-10. Hexaware Technology
-
-1. American Express
-2. Fractal
-3. Cisco
-4. IBM
-5. TCS
-6. Accenture
-7. HSBC
-8. Make My Trip
-9. TCS Digital
-10. Delloite
-11. Flipkart
-12. Informatica
-13. UBS
-14. Goldmann Sachs
-15. McKinsey and Co
-16. Walmart
+- Publicis sapient
+- Commvault system
+- Addverb
+- Sandisk
+- Bank Of America
+- Barclays
+- Oracle
+- Hexaware Technology
+- American Express
+- Fractal Analytics
+- Cisco
+- IBM
+- TCS
+- Accenture
+- HSBC
+- TCS Digital
+- Deloitte
+- Flipkart
+- Informatica
+- UBS
+- Goldmann Sachs
+- McKinsey and Co
+- Walmart
 
 ## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR INTERNSHIPS IN 2020
 
