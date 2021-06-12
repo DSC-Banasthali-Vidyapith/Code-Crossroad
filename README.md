@@ -6,8 +6,6 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 
 
 [![Issues](https://img.shields.io/github/issues/DSC-Banasthali-Vidyapith/Code-Crossroad)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/issues)
-[![Open Source Love svg1](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
@@ -168,19 +166,5 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 
 [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Vanshikagarg17)
 
-### Built with ❤️ by DSC Banasthali Vidyapith
+### Built with ❤️ by GDSC Banasthali Vidyapith
 
-
-
-
-
-
-
-
-[![forthebadge](https://forthebadge.com/images/badges/built-by-developers.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-c-plus-plus.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-java.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/made-with-python.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/open-source.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/uses-git.svg)](https://forthebadge.com)
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
