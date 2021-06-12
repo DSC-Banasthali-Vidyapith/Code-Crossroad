@@ -138,7 +138,43 @@ You can find our Code of Conduct [here](https://github.com/DSC-Banasthali-Vidyap
 
 This project follows the [MIT License](https://choosealicense.com/licenses/mit/).
 
+<!-- CONTRIBUTORS -->
 
+### Contributors
+
+<p align="left">
+<a href="https://github.com/Vanshikagarg17"><img width="72px" src="https://avatars.githubusercontent.com/u/51471702?s=400&u=c3ae1a80c62a5552d41906f7acbc2cd0abf01c08&v=4"></a>
+<img width="72px" src="https://avatars.githubusercontent.com/u/45946392?s=60&amp;u=1bcd1ea8a3c9c9ee4a3120db0fbff3dd3a3f900f&amp;v=4">
+<img width="72px" src="https://avatars.githubusercontent.com/u/61283887?s=60&amp;u=cd795c302b53d1b427811e02dd96dccd155c4827&amp;v=4">
+<img width="72px" src="https://avatars.githubusercontent.com/u/61665348?s=60&amp;v=4">
+<img width="72px" src="https://avatars.githubusercontent.com/u/68401881?s=60&amp;u=3eca1b119f89a2f712cbe478c4ce1e213346c309&amp;v=4">
+<img width="72px" src="https://avatars.githubusercontent.com/u/62608652?s=60&amp;v=4">
+<img width="72px" src="https://avatars.githubusercontent.com/u/53488394?s=60&amp;u=209a47a9d7c6eb854247be9d6788c8461c87c00c&amp;v=4">
+<img width="72px" src="https://avatars.githubusercontent.com/u/55035814?s=60&amp;u=390c2b6b4aecf21522a421b266088d8034ee532e&amp;v=4">
+<img width="72px" src="https://avatars.githubusercontent.com/u/46489702?s=60&amp;u=81c81f1b556d173f1230e715f3ec81bf0907b561&amp;v=4">
+</p>
+
+
+
+## Social Handles
+
+<a href="https://www.linkedin.com/company/dsc-banasthali-vidyapith/">
+    <img align="left" alt="DSC-Banasthali Vidyapith | Linkedin" width="24px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Linkedin.svg" />
+  </a>
+   <a href="https://twitter.com/DSC_Banasthali">
+    <img align="left" alt="Vanshika Garg | Twitter" width="26px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Twitter.svg" />
+</a> 
+  <a href="https://www.instagram.com/dsc_banasthalividyapith/">
+    <img align="left" alt="vanshikaaaaa_ | Instagram" width="24px" src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Instagram.svg" />
+  </a><a href="https://dscbanasthalividyapith.medium.com/" target="blank"><img align="left" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/medium.svg" alt="@vanshikagarg17" height="25" width="25" /></a> 
+
+<br>
+<br>
+<br>
+
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/Vanshikagarg17)
+
+### Built with ❤️ by DSC Banasthali Vidyapith
 
 
 
