@@ -62,7 +62,7 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 - McKinsey and Co
 - Walmart
 
-## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR INTERNSHIPS IN 2020
+## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR INTERNSHIP IN 2020
 
 Flipkart
 Goldman Sachs
