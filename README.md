@@ -38,9 +38,8 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 
 ## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR PLACEMENTS IN 2020
 
-### New
-1. Athena health
-2. Salesforce
+- Athena health
+- Salesforce
 3. Publicis sapient
 4. Commvault system
 5. Addverb
@@ -50,7 +49,6 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 9. Oracle
 10. Hexaware Technology
 
-### Old
 1. American Express
 2. Fractal
 3. Cisco
