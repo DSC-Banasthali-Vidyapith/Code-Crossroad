@@ -36,6 +36,21 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 
 ## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR PLACEMENTS 
 
+- Flipkart
+- Cisco
+- Fractal Analytics
+- American Express
+- IBM
+- TCS
+- Accenture
+- HSBC
+- TCS Digital
+- Deloitte
+- Informatica
+- UBS
+- Goldmann Sachs
+- McKinsey and Co
+- Walmart
 - Athena health
 - Salesforce
 - Publicis sapient
@@ -46,21 +61,6 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 - Barclays
 - Oracle
 - Hexaware Technology
-- American Express
-- Fractal Analytics
-- Cisco
-- IBM
-- TCS
-- Accenture
-- HSBC
-- TCS Digital
-- Deloitte
-- Flipkart
-- Informatica
-- UBS
-- Goldmann Sachs
-- McKinsey and Co
-- Walmart
 
 ## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR INTERNSHIP IN 2020
 
