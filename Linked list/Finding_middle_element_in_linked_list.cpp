@@ -83,4 +83,7 @@ Output: 3
 
 Input: 1->2->3->4->5->6
 Output: 4
+
+Time complexity: O(N)
+space complexity: O(1)
 */
