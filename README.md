@@ -101,7 +101,7 @@ You may go through these guidelines and contribute accordingly:
 
 ## Where to upload the files 📂
 
-* Your files should be uploaded inside the same folder as the question and name your file as **Question_number.cpp** (assuming that the code submitted is written in cpp)
+* Your files should be uploaded inside the same folder as the question and name your file as **Question_name.cpp** (assuming that the code submitted is written in cpp)
 * **Under no circumstances create new folders within the respective topic folders to upload your code unless specifically told to do so**.
 * Edit the corresponding README.md file to add the link to your code in the corresponding section in **alphabatical order**.[(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
 
