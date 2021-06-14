@@ -80,4 +80,6 @@ int main() {
 /*
 Input: LinkedList: 1->2->3->4->5
 Output: 3
+Time Complexity : O(N)
+Space Complexity : O(1)
 */
