@@ -84,12 +84,17 @@ The questions are classified according to the topics. Students are free to submi
 You may go through these guidelines and contribute accordingly:
 
 * Make sure you do not copy codes from external sources like GFG,hackerearth, etc because that work will not be considered. **Plagiarism is strictly not allowed.** 
-* You can only work on issues that you have been assigned to you.
 * If you want to contribute for an existing algorithm, we prefer that you create an issue before making a PR and link your PR to that issue.
 * If you have modified/added code work, make sure the code compiles before submitting.
 * Strictly use snake_case (underscore_separated) in your file_name and push it in correct folder.
 * Just mention the issue against which the pull request is open by writing ```Fixes #(your issue number)``` in the description of the pull request
 * Do not update the [README.md](README.md).
+
+## Guidelines for issue creation :
+* Always **pitch your idea well** and mention the specific **data structure/algorithm** and the **language** in which you will implement.
+* Your issue can be **closed** if the issue you created already exists. Use the search functionality on Github Issues.
+* Once you have decided the problem you want to work upon, shoot an issue and patiently wait for our project maintainer to have a look over it and assign it to you.
+* You can **ONLY** work on the issues that have been **assigned** to you.
 
 ## Guidelines for code base :
 * Use **1 tab or 4 spaces** indentation.
