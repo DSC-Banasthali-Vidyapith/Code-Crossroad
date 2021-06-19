@@ -33,7 +33,7 @@ void loopForm(Node* head,Node* tail, int x)
 	
 	tail->next=temp;
 }
-//Function to check if the linked list has a loop.
+    //Function to check if the linked list has a loop.
 bool isLoop(Node* head)
 {
         // your code here
@@ -62,12 +62,8 @@ bool isLoop(Node* head)
         
         return false;
 }
-//main function
 int main()
 {
-    //two pointer
-    //head-points to start of linked list
-    //tail-points to end of linked list (for formation of loop)
 	Node* head, *tail;
 	int n,x,d;
 	cin>>n>>d;
