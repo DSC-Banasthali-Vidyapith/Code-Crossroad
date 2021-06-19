@@ -28,7 +28,7 @@ int kadaneAlgo(int arr[], int n)
  
 int main()
 {
-	int n,max_sum;
+     int n,max_sum;
      cout<<"Enter the size of the array: ";
      cin>>n;
      int arr[n];
