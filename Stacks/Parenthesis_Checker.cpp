@@ -1,13 +1,13 @@
- // Anisha Singh
- // EEE
- // BV'23
+/*  We are going to solve this question using Stack. If the current character is ‘(‘ or ‘{‘ or ‘[‘ then push it to stack otherwise pop it and check
+whether the popped bracket is corresponding starting bracket of the current character, then it is fine otherwise that is not balanced.*/
 
 #include <iostream>
 #include <stack>
 
 using namespace std;
 
-bool check_parenthesis(string str) 			 //Boolean Function to check the given expression 
+//Boolean Function to check the given expression if it is valid or not
+bool check_parenthesis(string str) 			 
 {
 	stack <char> s;
 
@@ -15,7 +15,8 @@ bool check_parenthesis(string str) 			 //Boolean Function to check the given exp
 	{
 		if(str[i]=='(' || str[i]=='[' || str[i]=='{' )
 		{
-			s.push(str[i]);    					//Push the element into stack
+			//Push the element into stack
+			s.push(str[i]);    					
 		}
 
 		else
@@ -62,7 +63,8 @@ bool check_parenthesis(string str) 			 //Boolean Function to check the given exp
 			}
 		}
 	}
-
+	
+	//Check if the stack is empty
 	return s.empty();
 
 }
@@ -72,22 +74,22 @@ int main()
 
 	string exp;
 	cin>>exp;
-
-	if (check_parenthesis(exp))   			 //Calling the function
+	
+	//Calling the function
+	if (check_parenthesis(exp))   			 
       cout << "true";
    else
       cout << "false";
 }
 
+/* Input : [(a+b)]
+   Output:  True
 
-   // Input : [(a+b)]
-   // Output:  True
-
-   // Input : [)]
-   // Output:  False
+   Input : [)]
+   Output:  False
  
- 	// Time Complexity : O(n)
- 	// Space Complexity : O(n)
+   Time Complexity : O(n)
+   Space Complexity : O(n). */
 	
 
 
