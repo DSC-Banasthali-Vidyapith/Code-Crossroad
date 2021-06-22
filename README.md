@@ -111,7 +111,7 @@ You may go through these guidelines and contribute accordingly:
 * Edit the corresponding README.md file to add the link to your code in the corresponding section in **alphabetical order**.[(GitHub Markdown Guide)](https://guides.github.com/features/mastering-markdown/).
 
 
-The value of a strong contribution stays beyond everything and gives you satisfaction 👍.
+The value of a strong contribution stays beyond everything and gives you satisfaction.
 
 <!-- # Maintainers 😇
 
