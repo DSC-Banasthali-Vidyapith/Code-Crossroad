@@ -64,6 +64,9 @@ bool isLoop(Node* head)
 }
 int main()
 {
+    //2 pointers : head and tail
+    //head points to start of linked list
+    //tail points to end of linked list(for loop formation)
 	Node* head, *tail;
 	int n,x,d;
 	cin>>n>>d;
@@ -91,7 +94,10 @@ int main()
 //Time Complexity: O(N) 
 //Auxiliary Space: O(1)
 
-/*Input: N = 3 value[] = {1,3,4} x = 2
-
+/*
+Input: N = 3 value[] = {1,3,4} x = 2
 Output: True
+
+Input: N = 5 value[] = {1,2,3,4,5} x = 0
+Output: False
 */
