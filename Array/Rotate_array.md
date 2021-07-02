@@ -29,3 +29,43 @@ Constraints:
 
 ### DIFFICULTY LEVEL : EASY
 ### ASKED BY : Microsoft , Amazon
+#include <iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+    void rotate(vector<int>& nums, int d) {
+        //handling corner case of having d greater than provided n
+          d = d % nums.size();
+
+        //reversing the complete vector
+        reverse(nums.begin(),nums.end());
+
+        //reversing the values from the start till nums.size()-d th value
+        reverse(nums.begin(),nums.begin()+nums.size()-d);
+        
+         //reversing the values from the nums.size()-d th value till the end
+        reverse(nums.begin()+nums.size()-d,nums.end());
+    }
+int main() {
+   int n,d,temp;
+   cin>>n;
+   cin>>d;
+   vector<int> nums;
+
+   //inputing array
+   for(int i=0;i<n;i++)
+   {
+       cin>>temp;
+      nums.push_back(temp);
+   }
+
+   //calling rotate function
+   rotate(nums,d);
+
+   //printing the resultant vector
+   for(int i=0;i<n;i++)
+   {
+       cout<<nums[i];
+   }
+   return 0;
+}
