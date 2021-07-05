@@ -35,3 +35,103 @@ Output :
 7 4 5 2 8 6 3 1 9
 Explanation :
 The goal is to print the solution of Sudoku, i.e., to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contains all of the digits from 1 to 9.  Each row, column of 3*3 box of the output matrix contains unique numbers.
+#include <bits/stdc++.h>
+using namespace std;
+
+bool canPlace(int mat[][9], int i, int j, int n, int number)
+{
+
+    //Check for row and column
+    for (int k = 0; k < n; k++)
+    {
+        if (mat[i][k] == number || mat[k][j] == number)
+        {
+            return false;
+        }
+    }
+    //Check for Subgrid
+
+    //For checking subgrid we need to find the starting index of the subgrid
+    int sqn = sqrt(n);
+    int sx = (i / sqn) * sqn;
+    int sy = (j / sqn) * sqn;
+    for (int row = sx; row < sx + sqn; row++)
+    {
+        for (int col = sy; col < sy + sqn; col++)
+        {
+            if (mat[row][col] == number)
+            {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+
+bool solveSudoku(int mat[][9], int i, int j, int n)
+{
+    //Base Case
+    //We have iterated over all rows and reach final row
+    if (i == n)
+    {
+        //Printing matrix
+        for (int i = 0; i < n; i++)
+        {
+            for (int j = 0; j < n; j++)
+            {
+                cout << mat[i][j] << " ";
+            }
+
+            cout << endl;
+        }
+
+        return true;
+    }
+
+    //We have reached end of row,so we switch to next row.
+    if (j == n)
+    {
+        return solveSudoku(mat, i + 1, 0, n);
+    }
+
+    //If cell is pre-filled we skip to next cell
+    if (mat[i][j] != 0)
+    {
+        return solveSudoku(mat, i, j + 1, n);
+    }
+    //Rec Case
+    //Now we try to fill the current position with possible options
+    for (int number = 1; number <= n; number++)
+    {
+        if (canPlace(mat, i, j, n, number))
+        {
+            //Assume this is correct number
+            mat[i][j] = number;
+            //Call on remaining matrix
+            bool couldWeSolve = solveSudoku(mat, i, j + 1, n);
+            if (couldWeSolve == true)
+            {
+                return true;
+            }
+        }
+    }
+    //Backtrack here,since all options for the given number have been used
+    mat[i][j] = 0;
+    return false; //Sudoku couldnt be solved in this case.
+}
+
+int main()
+{
+    int grid[9][9];
+	//input grid
+    for(int i=0;i<9;i++)
+    {
+        for(int j=0;j<9;j++)
+        {
+            cin>>grid[i][j];
+        }
+    }
+    solveSudoku(grid, 0, 0, 9);
+    return 0;
+}
