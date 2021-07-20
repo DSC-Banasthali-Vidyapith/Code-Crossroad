@@ -20,3 +20,5 @@ Constraints:
 1 ≤ N ≤ 10^6
 
 -10^7 ≤ arr ≤ 10^7
+
+### DIFFICULTY LEVEL : EASY
