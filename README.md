@@ -64,15 +64,15 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 
 ## COMPANIES THAT VISITED BANASTHALI VIDYAPITH FOR INTERNSHIP IN 2020
 
-Flipkart
-Goldman Sachs
-American Express
-Barclays
-Oracle
+- Flipkart
+- Goldman Sachs
+- American Express
+- Barclays
+- Oracle
 
 
 
-The questions are classified according to the topics. Students are free to submit solutions for any of the mentioned language. The allowed languages are:
+The questions are classified according to the topics. Students are free to submit solutions in any of these mentioned languages:
 * Java
 * C
 * C++
