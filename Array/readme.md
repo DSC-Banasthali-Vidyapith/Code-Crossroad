@@ -7,3 +7,4 @@
 3.  [Largest sum subarray](Largest_sum_subarray.md)
 4.  [Swap kth elements](Swap_kth_elements.md)
 5.  [Sort_array_in_wave_form.md](Sort_array_in_wave_form.md)
+6.  [Finding the Missing Number](Finding_missing_number.md)
