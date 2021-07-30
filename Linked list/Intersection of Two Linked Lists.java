@@ -127,3 +127,67 @@ public class SinglyLinkedList
 		 */
 	}
 }
+/*The input is as follows:
+ * line1: no of nodes in the first linked list
+ * line2: enter first linked list elements
+ * line3: no of nodes in the second linked list
+ * line4: enter second linked list elements
+ * line5: enter the no of nodes in the common linked list
+ * line5: enter the elements of the common linked list
+ */
+
+/*The output is as follows:
+ * line1: A message indicating the the provided linked lists are being intersected will pop up
+ * line2: First Linked list after intersection
+ * line3: Second Linked List after intersection
+ * line4: The intersection point
+ */
+
+
+
+/*
+Sample Input 1;
+
+1
+1
+2
+2 3
+3
+4 5 6
+
+
+Sample Output 1:
+
+Intersecting the lists
+*****************************
+First linked list: 1 4 5 6 
+Second linked list: 2 3 4 5 6 
+Intersection point: 4
+
+
+Sample Input 2:
+	 
+3
+9 8 7
+4
+2 3 6 5
+3
+15 4 19
+
+
+Sample Output 2:
+
+Intersecting the lists
+*****************************
+First linked list: 9 8 7 15 4 19 
+Second linked list: 2 3 6 5 15 4 19 
+Intersection point: 15
+*/
+
+
+
+/*
+Expected Time Complexity: O(N+M)
+Expected Auxiliary Space: O(1)
+*/
+
