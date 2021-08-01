@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+//EXPLAINATION:
+/* The naive approach used here is to generate all possible configurations of numbers from 1 to 9 to fill the empty cells. Try every configuration one by one until the correct configuration is found, i.e. for every unassigned position fill the position with a number from 1 to 9.
+     After filling all the unassigned position check if the matrix is safe or not. If safe print else recurs for other cases.*/
+     #include <bits/stdc++.h>
 using namespace std;
 
 bool canPlace(int mat[][9], int i, int j, int n, int number)
