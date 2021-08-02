@@ -1,3 +1,35 @@
+/*
+ * To find the intersection point of two linked lists:
+ * 			Using Two pointers approach:
+						*Initialize two pointers "a" and "b" at the headA and headB.
+						*Traverse through the lists,one node at a time.
+						*When "a" reaches the end of a list, then redirect it to the headB.
+						*similarly when "b" reaches the end of a list, redirect it the headA.
+						*Once both of them go through reassigning, they will be equdistant from 
+						 the collision point
+						*If at any node "a" meets "b", then it is the intersection node.
+						*After second iteration if there is no intersection node it returns NULL.
+ */
+
+
+
+/*The input is as follows:
+ * line1: no of nodes in the first linked list
+ * line2: enter first linked list elements
+ * line3: no of nodes in the second linked list
+ * line4: enter second linked list elements
+ * line5: enter the no of nodes in the common linked list
+ * line5: enter the elements of the common linked list
+ */
+
+/*The output is as follows:
+ * line1: A message indicating the the provided linked lists are being intersected will pop up
+ * line2: First Linked list after intersection
+ * line3: Second Linked List after intersection
+ * line4: The intersection point
+ */
+
+
 import java.util.*;
 public class SinglyLinkedList
 {
@@ -83,14 +115,6 @@ public class SinglyLinkedList
 	
 	
 	public static void main(String[] args) {
-		/*The input is as follows:
-		 * line1: no of nodes in the first linked list
-		 * line2: enter first linked list elements
-		 * line3: no of nodes in the second linked list
-		 * line4: enter second linked list elements
-		 * line5: enter the no of nodes in the common linked list
-		 * line5: enter the elements of the common linked list
-		 */
 		 Scanner Sc=new Scanner(System.in);
 		SinglyLinkedList list1=new SinglyLinkedList();
 		SinglyLinkedList list2=new SinglyLinkedList();
@@ -119,30 +143,8 @@ public class SinglyLinkedList
 		else
 			System.out.println(getIntersectionNode(list1.head.next,list2.head.next));
 		Sc.close();
-		/*The output is as follows:
-		 * line1: A message indicating the the provided linked lists are being intersected will pop up
-		 * line2: First Linked list after intersection
-		 * line3: Second Linked List after intersection
-		 * line4: The intersection point
-		 */
 	}
 }
-/*The input is as follows:
- * line1: no of nodes in the first linked list
- * line2: enter first linked list elements
- * line3: no of nodes in the second linked list
- * line4: enter second linked list elements
- * line5: enter the no of nodes in the common linked list
- * line5: enter the elements of the common linked list
- */
-
-/*The output is as follows:
- * line1: A message indicating the the provided linked lists are being intersected will pop up
- * line2: First Linked list after intersection
- * line3: Second Linked List after intersection
- * line4: The intersection point
- */
-
 
 
 /*
@@ -190,4 +192,3 @@ Intersection point: 15
 Expected Time Complexity: O(N+M)
 Expected Auxiliary Space: O(1)
 */
-
