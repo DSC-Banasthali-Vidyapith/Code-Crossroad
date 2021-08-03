@@ -31,7 +31,7 @@
 
 
 import java.util.*;
-public class SinglyLinkedList
+class SinglyLinkedList
 {
 	
 	class ListNode
@@ -149,24 +149,18 @@ public class SinglyLinkedList
 
 /*
 Sample Input 1;
-
 1
 1
 2
 2 3
 3
 4 5 6
-
-
 Sample Output 1:
-
 Intersecting the lists
 *****************************
 First linked list: 1 4 5 6 
 Second linked list: 2 3 4 5 6 
 Intersection point: 4
-
-
 Sample Input 2:
 	 
 3
@@ -175,10 +169,7 @@ Sample Input 2:
 2 3 6 5
 3
 15 4 19
-
-
 Sample Output 2:
-
 Intersecting the lists
 *****************************
 First linked list: 9 8 7 15 4 19 
