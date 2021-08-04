@@ -7,16 +7,7 @@
  ~ Thus, when we reach our last digit of the input number, the 'result' vector stores all the possible words formed by previous 'n-1' digits.
  ~ Now, we'll be appending each associated alphabet (with the last digit) at the end of all these existing words, thus, finally giving us all possible words formed from given input number.
  
- 
- TIME COMPLEXITY : O(4^n) 
- Explanation : In the worst case, all the digits may have 4 associated alphabets. Now, for 1st digit there are 4 options. Then, for each of these 4 options, there will be 4 more options (coming from next digit) and so on. This continues till the number of digits, i.e., 'n'. Thus, the resultant time complexity.  
- 
- 
- SPACE COMPLEXITY : O(1)
- Explanation : Ignoring the space occupied by the input and output vector, the only major space occupied is by the map. But since the space occupied by it is independent of our input, it will be costant space usage. 
- 
- ***/
- 
+ ***/ 
  
  #include<bits/stdc++.h>
  using namespace std;
@@ -81,3 +72,27 @@ int main ()
 	
  	return 0;
 }
+/***
+
+TIME COMPLEXITY : O(4^n) 
+Explanation : In the worst case, all the digits may have 4 associated alphabets. Now, for 1st digit there are 4 options. Then, for each of these 4 options, there will be 4 more options (coming from next digit) and so on. This continues till the number of digits, i.e., 'n'. Thus, the resultant time complexity.  
+ 
+ 
+SPACE COMPLEXITY : O(1)
+Explanation : Ignoring the space occupied by the input and output vector, the only major space occupied is by the map. But since the space occupied by it is independent of our input, it will be costant space usage. 
+ 
+ ***/
+
+/***
+
+1) Input number: 5
+   Output: j k l
+   
+2) Input number: 234
+   Output:
+   adg adh adi aeg aeh aei afg afh 
+   afi bdg bdh bdi beg beh bei bfg 
+   bfh bfi cdg cdh cdi ceg ceh cei 
+   cfg cfh cfi
+   
+ ***/
