@@ -11,22 +11,28 @@ distinct integers*/
 maintaining distinctness from the adjacent vertices of vertex k.
 If no such color exists, then x[k] is 0.*/
 
-void nextvalue(int x[50],int g[50][50],int k,int n,int m)
+void nextvalue(int x[50], int g[50][50], int k, int n, int m)
 {
 	int j;
  	while(1)
  	{
-   		x[k] = (x[k]+1) % (m+1);    			//next higher color
-   		if(x[k] == 0)             				//all colors have been used
+		 //next higher color
+   		x[k] = (x[k] + 1) % (m + 1);    
+
+		//all colors have been used			
+   		if(x[k] == 0)             				
       		return;
       		
       	//checking if this color is distinct from adjacent colors	
-   		for(j=1; j<=n; j++)         
+   		for(j = 1 ; j <= n ; j++)         
    		{                          
-     		if(g[k][j] != 0 && (x[k] == x[j]))	//if (k,j) is an edge and if adjacent vertices have the same color
+			//if (k,j) is an edge and if adjacent vertices have the same color
+     		if(g[k][j] != 0 && (x[k] == x[j]))	
         		break; 
    		}
-     	if(j == n+1)           //new color found       
+		
+		//new color found 
+     	if(j == n+1)                 
        		return;                     
   	}
 }
@@ -39,61 +45,68 @@ adjacent vertices are assigned distinct integers are printed*/
 void mcoloring(int x[50],int g[50][50],int k,int n,int m)
 {
 	int i;
-  	do								//loop for generating all legal assignments for x[k]
- 	{                         
-   		nextvalue(x, g, k,n ,m);    //Assign to x[k] a legal color
+
+	//loop for generating all legal assignments for x[k]
+  	do								
+ 	{           
+		//Assign to x[k] a legal color              
+   		nextvalue(x, g, k, n, m);    
 		     
-   		if(x[k] == 0)             	//No new color possible
+		//No new color possible
+   		if(x[k] == 0)             	
      		return; 
    		
-		if(k == n)                //Atmost m colors have been used to color the n vertices
+		//Atmost m colors have been used to color the n vertices
+		if(k == n)                
    		{
-    		for(i=1 ;i<=n; i++)
-      			cout<<"V"<<i<<": "<<x[i]<<"\t";     
-      		cout<<"\n";
+    		for(i = 1 ; i <= n ; i++)
+      			cout << "V" << i << ": " << x[i] << "\t";     
+      		cout << "\n";
    		}
   		else
-		mcoloring(x, g, k+1, n, m); 
+			mcoloring(x, g, k+1, n, m); 
 		
- 	}while(k<n+1); 
+ 	}while(k < n+1); 
 }
 
 //Main function
 int main()
 {
-	int n,ne,u,v,i,j,x[50],g[50][50],m;
+	int n, ne, u, v, i, j, x[50], g[50][50], m;
 	 
-	cout<<"\nEnter number of vertices: ";
-	cin>>n;				//reading number of vertices of the graph from user
-	 
-	cout<<"\nEnter number of edges: ";
-	cin>>ne;			//reading number of edges of the graph from user
+	//reading number of vertices of the graph from user
+	cout << "\nEnter number of vertices: ";
+	cin >> n;				
+
+	//reading number of edges of the graph from user 
+	cout << "\nEnter number of edges: ";
+	cin >> ne;			
   
-  	m = n-1;
-  	cout<<"\nThe maximum possible colours that can be assigned is "<<m<<endl;
+  	m = n - 1;
+  	cout << "\nThe maximum possible colours that can be assigned is " << m << endl;
   	
   	//The graph is represented by its boolean adjacency matrix G[1:n,1:n]
-  	for(i=0; i<=n; i++)
-    	for(j=0; j<=n; j++)
+  	for(i = 0 ; i <= n ; i++)
+    	for(j = 0 ; j <= n ; j++)
        		g[i][j] = 0;
        
-  	for(i=1; i<=ne; i++)
+  	for(i = 1 ; i <= ne ; i++)
 	{
-	 	cout<<"\nEnter the first terminal vertex of edge "<<i<<": ";
-	 	cin>>u;
+	 	cout << "\nEnter the first terminal vertex of edge " << i << ": ";
+	 	cin >> u;
 	 	
-	 	cout<<"\nEnter the second terminal vertex of edge "<<i<<": ";
-	 	cin>>v;
+	 	cout << "\nEnter the second terminal vertex of edge " <<i << ": ";
+	 	cin >> v;
 	 	
 		g[u][v] = 1;
    		g[v][u] = 1;
   	}
    
-   	for(i=0; i<=n; i++)
+   	for(i = 0 ; i <= n ; i++)
       	x[i] = 0;
    
-	cout<<endl<<"The colouring possibilities are:"<<endl;
-    mcoloring(x ,g ,1 ,n ,m);
+	cout << endl << "The colouring possibilities are:" << endl;
+    mcoloring(x, g, 1, n, m);
 }
 
 /*
