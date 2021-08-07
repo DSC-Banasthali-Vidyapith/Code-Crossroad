@@ -1,33 +1,47 @@
 /*Given an array of length N consisting of only 0s and 1s in random order.
 Modify the array to segregate 0s on left side and 1s on the right side of the array.*/
 
+/* ALGORITHM :
+We maintain two indices, left which starts from index 0 and right which starts from N-1 where N is number of elements in the array.
+Then Move left forward till it encounters a 1, similarly decrement right until a zero is encountered. 
+If left is less than right, swap elements at these two indice and repeat again.
+
+1. Set left = 0 and right = N-1
+2. While left < right 
+		if a[left] is 0 then left++
+		if a[right] is 1 then right–- ;
+		if left < right then swap(a[left], a[right])
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
 // Function to segregate 0s on left and 1s on right side of array
 void segregate_0s_and_1s(int array[],int N)
 {
-	//stores number of zeros present in array
-	int no_of_zeros=0;
 	
-	// Loop to count total number of 0s in array
-	for(int i=0;i<N;i++)
-	{
-		if(array[i]==0)
-			no_of_zeros+=1;
-	}
+	int left=0,right=N-1;
 	
-	// Loop to modify the left side of array with 0s 
-	for(int i=0;i<no_of_zeros;i++)
-	{
-		array[i]=0;
-	}
-	
-	// Loop to modify the right(remaining) side of array with 1s
-	for(int i=no_of_zeros;i<N;i++)
-	{
-		array[i]=1;
-	}
+ 	while (left<right)
+        {
+        	// Incrementing left index while there is 0 at left index 
+        	while(array[left]==0 && left<right)
+            	left=left+1;
+ 
+        	// Decrementing right index while there is 1 at right index
+        	while(array[right]==1 && left<right)
+            	right=right-1;
+ 
+        	// If left is smaller than right then swap array[left] and array[right]
+        	if (left<right)
+        	{
+            	array[left]=0;
+            	array[right]=1;
+            	left=left+1;
+            	right=right-1;
+        	}
+    	}
 		
 }
 
