@@ -53,3 +53,15 @@ int main() {
 	}
 	return 0;
 }
+
+
+/*Input:
+3
+(A+(B*C))
+((A+B)*(Z+X))
+((A+T)*((B+(A+C))^(C+D)))
+
+Output:
+ABC*+
+AB+ZX+*
+AT+BAC++CD+^* */
