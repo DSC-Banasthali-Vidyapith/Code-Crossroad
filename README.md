@@ -8,7 +8,7 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 
 [![Issues](https://img.shields.io/github/issues/DSC-Banasthali-Vidyapith/Code-Crossroad)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/issues)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-![Maintenance](https://img.shields.io/maintenance/yes/2021)
+
 
 <div align="center">
 
