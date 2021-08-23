@@ -12,7 +12,9 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 [![Forks](https://img.shields.io/github/forks/DSC-Banasthali-Vidyapith/Code-Crossroad?style=social)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad) 
 [![Stars](https://img.shields.io/github/stars/DSC-Banasthali-Vidyapith/Code-Crossroad?style=social)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad) 
 [![Watchers](https://img.shields.io/github/watchers/DSC-Banasthali-Vidyapith/Code-Crossroad?style=social)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad)
-
+</div>
+  
+  
 **Algo-Tree** is a collection of Algorithms and data structures which are fundamentals to efficient code and good software design. Creating and designing excellent algorithms is required for being an exemplary programmer. It contains solutions in various languages such as ``C++``, ``Python`` and ``Java``.
 
 <div align="center">
