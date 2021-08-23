@@ -10,6 +10,31 @@ This project contains the carefully compiled Data Structures & Algorithm questio
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 ![Maintenance](https://img.shields.io/maintenance/yes/2021)
 
+<div align="center">
+
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad"><img src="https://badges.frapsoft.com/os/v1/open-source.svg?v=103"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad"><img src="https://img.shields.io/badge/Built%20by-developers%20%3C%2F%3E-0059b3"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad"><img src="https://img.shields.io/static/v1.svg?label=Contributions&message=Welcome&color=yellow"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/"><img src="https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?v=103"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?v=103"></a>
+
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/graphs/contributors"><img src="https://img.shields.io/github/contributors/DSC-Banasthali-Vidyapith/Code-Crossroad?color=brightgreen"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/stargazers"><img src="https://img.shields.io/github/stars/DSC-Banasthali-Vidyapith/Code-Crossroad?color=0059b3"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/network/members"><img src="https://img.shields.io/github/forks/DSC-Banasthali-Vidyapith/Code-Crossroad?color=yellow"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/issues"><img src="https://img.shields.io/github/issues/DSC-Banasthali-Vidyapith/Code-Crossroad?color=0059b3"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/issues?q=is%3Aissue+is%3Aclosed"><img src="https://img.shields.io/github/issues-closed-raw/DSC-Banasthali-Vidyapith/Code-Crossroad?color=yellow"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/pulls"><img src="https://img.shields.io/github/issues-pr/DSC-Banasthali-Vidyapith/Code-Crossroad?color=brightgreen"></a>
+<a href="https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad/pulls?q=is%3Apr+is%3Aclosed"><img src="https://img.shields.io/github/issues-pr-closed-raw/DSC-Banasthali-Vidyapith/Code-Crossroad?color=0059b3"></a> 
+</div>
+
+
+
+
+
+
+
+
+
 [![Forks](https://img.shields.io/github/forks/DSC-Banasthali-Vidyapith/Code-Crossroad?style=social)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad) 
 [![Stars](https://img.shields.io/github/stars/DSC-Banasthali-Vidyapith/Code-Crossroad?style=social)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad) 
 [![Watchers](https://img.shields.io/github/watchers/DSC-Banasthali-Vidyapith/Code-Crossroad?style=social)](https://github.com/DSC-Banasthali-Vidyapith/Code-Crossroad)
