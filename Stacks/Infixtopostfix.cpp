@@ -1,3 +1,8 @@
+/*THIS IS A PROGRAM THAT CONVERTS INFIX TO POSTFIX EXPRESSION
+I HAVE USED STACK AS MY TECH
+THIS PROGRAM BASICALLY DOES THIS:
+(A+B) ->  AB+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -65,3 +70,9 @@ Output:
 ABC*+
 AB+ZX+*
 AT+BAC++CD+^* */
+
+/*TIME COMPLEXITY
+Worst case time complexity: Θ(n^2)
+Average case time complexity: Θ(n^2)
+Best case time complexity: Θ(n^2)
+Space complexity: Θ(n)*/
