@@ -168,7 +168,6 @@ This project follows the [MIT License](https://choosealicense.com/licenses/mit/)
 <p align="left">
 <a href="https://github.com/Vanshikagarg17"><img width="72px" src="https://avatars.githubusercontent.com/u/51471702?s=400&u=c3ae1a80c62a5552d41906f7acbc2cd0abf01c08&v=4"></a>
 <img width="72px" src="https://avatars.githubusercontent.com/u/45946392?s=60&amp;u=1bcd1ea8a3c9c9ee4a3120db0fbff3dd3a3f900f&amp;v=4">
-<img width="72px" src="https://avatars.githubusercontent.com/u/61283887?s=60&amp;u=cd795c302b53d1b427811e02dd96dccd155c4827&amp;v=4">
 </p>
 
 
