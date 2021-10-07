@@ -1,0 +1,85 @@
+/*
+Algorithm : We will take two stacks one for operator and other for evaluating postfix expression. Now while scanning the expression, as soon as we get a
+operand we push that in postfix stack.If we get an opening bracket while scanning the expression, we push that in the operator stack.If we get a closing 
+bracket while scanning the expression, we pop out the items of the operator stack until we get an opening bracket. And as soon as we get an opening bracket
+we pop that out too.
+If an operator comes then all the operators in the operator stack with greater or equal precedence get popped out until we get an opening bracket
+or the operator stack empties out. And then we push our current operator in our stack.
+And whenever an operator is popped out then at the same time two elements are also popped out from postfix stack and some work is performed using two strings
+and one operator.
+*/
+
+
+import java.util.*;
+
+public class InfixToPostfixExp {
+
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String exp = sc.nextLine();
+    Stack< String> postfix = new Stack<>();
+    Stack< Character> operators = new Stack<>();
+
+    for (int i = 0; i < exp.length(); i++) {
+      char ch = exp.charAt(i);
+
+      if (ch == '(') {
+        operators.push(ch);
+      } else if ((ch >= '0' && ch <= '9') || (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))  {
+        postfix.push(ch + "");
+      } else if (ch == '+' || ch == '-' || ch == '*' || ch == '/') {
+        while (operators.size() > 0 && operators.peek() != '(' && precedence(ch) <= precedence(operators.peek())) {
+          char op = operators.pop();
+
+          String postval2 = postfix.pop();
+          String postval1 = postfix.pop();
+          postfix.push(postval1 + postval2 + op);
+
+        }
+
+        operators.push(ch);
+      } else if (ch == ')') {
+        while (operators.size() > 0 && operators.peek() != '(') {
+          char op = operators.pop();
+
+          String postval2 = postfix.pop();
+          String postval1 = postfix.pop();
+          postfix.push(postval1 + postval2 + op);
+        }
+
+        if (operators.size() > 0) {
+          operators.pop();
+        }
+      }
+    }
+
+    while (operators.size() > 0) {
+      char op = operators.pop();
+
+      String postval2 = postfix.pop();
+      String postval1 = postfix.pop();
+      postfix.push(postval1 + postval2 + op);
+    }
+
+    System.out.println(postfix.peek());
+  }
+
+  public static int precedence(char op) {
+    if (op == '+') {
+      return 1;
+    } else if (op == '-') {
+      return 1;
+    } else if (op == '*') {
+      return 2;
+    } else {
+      return 2;
+    }
+  }
+}
+
+
+/* Input : a*(b-c+d)/e
+   Output : abc-d+*e/
+
+   Time Complexity : O(n)
+   Space Complexity : O(n) */
