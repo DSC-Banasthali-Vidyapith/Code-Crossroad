@@ -60,4 +60,7 @@ Output: 2147483648
 #2
 Input: A = 2147483649
 Output: 2147483649
+
+Time Complexity: O(log(A))
+Space Complexity: O(1)
 */
