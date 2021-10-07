@@ -1,3 +1,12 @@
+// Question:We have to find the intersection point of 2 linked list.
+
+// Given : IntersectionVal,Linked list 1, Linked List 2
+
+// Solution : In the code below, firstly find the difference of length of 2 linked list(say d).
+// Then, Traverse the list with bigger length till the d nodes.
+// Starting from the next node in both the list check whether they have a common value that also matches the intersectVal that is given in the question.
+// If yes, return that value else return -1.
+
 #include<iostream>
 #include<stdio.h>
 #include<bits/stdc++.h>
@@ -89,5 +98,10 @@ int intersectPoint(Node* head1, Node* head2,int intersectVal)
     }
     return -1;
 }
+
+// Running time complexity : O(n1+n2)
+// assuming lengths of linked list as n1 and n2 respectively.
+// Space Complexity : O(1)
+
 
 
