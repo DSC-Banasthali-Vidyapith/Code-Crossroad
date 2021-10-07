@@ -1,5 +1,5 @@
-//Aim: Given an unsorted array arr[] of size N, rotate it by D elements in the counter-clockwise direction.
-```c
+//Given an unsorted array arr[] of size N, rotate it by D elements in the counter-clockwise direction.
+```
 #include <stdio.h>
 #define len 100
 int main()
@@ -40,3 +40,42 @@ int main()
     return 0;
 }
 ```
+/*
+Time complexity : O(N * D) 
+Space Complexity : O(1)
+
+
+-> Test Case 1:-
+
+INPUT:-
+Enter size of array
+5
+Enter elements of array
+1 2 3 4 5
+Enter no of rotation
+3
+Original array:
+1 2 3 4 5
+
+OUTPUT:-
+Array after rotate in counter-clockwise direction:
+4 5 1 2 3
+
+-> Test Case 2:-
+INPUT:-
+
+Enter size of array
+10
+Enter elements of array
+12 45 87 14 97 36 63 34 89 13
+Enter no of rotation
+4
+Original array:
+12 45 87 14 97 36 63 34 89 13
+
+OUTPUT:-
+
+Array after rotate in counter-clockwise direction:
+97 36 63 34 89 13 12 45 87 14
+
+*/
