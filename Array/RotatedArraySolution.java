@@ -43,9 +43,9 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
 
 
 Constraints:
-1 <= nums.length <= 105
--231 <= nums[i] <= 231 - 1
-0 <= k <= 105
+1 <= nums.length <= 10^5
+-2^31 <= nums[i] <= 2^31 - 1
+0 <= k <= 10^5
 
 */
 
