@@ -1,39 +1,40 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution {
-
-    public static void main(String[] args)
-    {
-        Scanner input = new Scanner(System.in);
-        System.out.print("Enter the number of elements in an array: ");
-        int n = input.nextInt();
-        int[] arr = new int[n];
-        System.out.print("Enter the elements of the array: ");
-        for(int i=0; i<n; i++)
-        {
-            arr[i] = input.nextInt();
+public class RotateArray {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter length of array: ");
+        int len = in.nextInt();
+        System.out.print("Enter numbers: ");
+        int[] nums = new int[len];
+        for (int i=0; i < len; i++){
+            nums[i] = in.nextInt();
         }
-        System.out.print("By how many elements the array should be rotated: ");
-        int D = input.nextInt();
-
-
-        rotateArray(arr,n,D);
-
+        System.out.print("Enter number of rotations: ");
+        int k = in.nextInt();
+        System.out.println("Input Array: "+ Arrays.toString(nums));
+        rotate(nums, k);
     }
-    static void rotateArray(int[] arr, int n, int D)
-    {
-        System.out.print("Rotated array: ");
-
-        for(int i=n-D; i<n; i++)
-        {
-            System.out.print(arr[i] + " ");
-        }
-
-        for(int i=0; i<n-D; i++)
-        {
-            System.out.print(arr[i] + " ");
-        }
-
-
+    public static void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;
+        rotateSubArray(nums, 0, n-k);
+        rotateSubArray(nums, n-k, n);
+        rotateSubArray(nums, 0 , n);
+        System.out.println("Rotated Array: "+ Arrays.toString(nums));
     }
+    public static void rotateSubArray(int[] nums, int start, int end){
+        while(start < end){
+            swap(nums, start, end-1);
+            start++;
+            end--;
+        }
+    }
+    public static void swap(int[] nums, int i, int j){
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+
 }
