@@ -27,15 +27,15 @@ int main()
    	printf("Enter no of rotation\n");
    	scanf("%d",&D);
    	printf("Original array: \n");
-     	for (int i = 0; i < N; i++)
+     	for (i=0; i<N; i++)
 	 {
 	  	printf("%d ", arr[i]);
      	 }
  	  //Rotate the given array by D times toward left or counter-clockwise direction
-  	for(int i = 0; i < D; i++)
+  	for(i=0;i<D; i++)
   	 {
 	   	first = arr[0];  //Stores the first element of the array
-	   	for(j = 0; j < N-1; j++)
+	   	for(j=0;j<N-1;j++)
 	     	{
               		arr[j] = arr[j+1];  //Shift element of array by one
 	     	}
@@ -43,7 +43,7 @@ int main()
 	 }
    	printf("\n");
    	printf("Array after rotate in counter-clockwise direction: \n");
-   	for(int i = 0; i < N; i++)
+   	for(i=0;i<N;i++)
 	 {
         	printf("%d ", arr[i]);
 	 }
