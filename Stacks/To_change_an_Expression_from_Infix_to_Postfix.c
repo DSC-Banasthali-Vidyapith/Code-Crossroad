@@ -1,5 +1,5 @@
 /*
-Problem statement: To change a Expression from Infix to Postfix
+Problem statement: To change an Expression from Infix to Postfix
                    using stack in C
 
 Algorithm:
