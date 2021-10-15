@@ -1,9 +1,30 @@
+/*
+AIM : Given two singly linked list intersecting eachother at a point . Find the intersection point.
+====================================================================================================
+INPUT : 
+1. size of first linked list (say n1)
+2. first linked list
+3. size of second linked list (say n2)
+4. second linked list
+5. size of linked list that is common to both (say n3)
+6. common linked list
+=========================================================
+OUTPUT : 
+Data of the node at which both the linked list are intersecting.
+=================================================================
+APPROACH :
+1. Assuming that only head of both the linked list are passed, length of both the linked list is calculated initially.
+2. To find the point of intersection, traverse the linked list with bigger length by difference of lengths of 2 nodes (i.e abs(n1-n2)).
+3. After that compare address of each node of both lists one by one until they get equal.
+==========================================================================================
+*/
+
 #include<iostream>
 #include<stdio.h>
 #include<bits/stdc++.h>
 using namespace std;
 
-/* Link list Node */
+// Link list Node 
 struct Node
 {
     int data;
@@ -15,8 +36,8 @@ struct Node
     }
 };
 
-int intersectPoint(struct Node* head1, struct Node* head2,int intersectVal);
 
+//This function takes input of linked lists
 Node* inputList(int size)
 {
     if(size==0) return NULL;
@@ -36,30 +57,14 @@ Node* inputList(int size)
     
     return head;
 }
-int main()
-{
-    	int n1,n2,intersectVal;
-    	cout<<"Enter size of 2 linked list : ";
-        cin>>n1>>n2;
-        
-        cout<<"Enter first linked list : ";
-        Node* head1 = inputList(n1);
-        cout<<"Enter second linked list : ";
-        Node* head2 = inputList(n2);
-        cout<<"Enter intersection value : ";
-        cin>>intersectVal;
-        cout<<"Intersection point is : ";
-        cout << intersectPoint(head1, head2,intersectVal) << endl;
-    return 0;
-}
-//Function to find intersection point in Linked Lists.
-int intersectPoint(Node* head1, Node* head2,int intersectVal)
+
+//Function to find intersection point in Y shaped Linked Lists.
+int intersectPoint(Node* head1, Node* head2)
 {
     int l1=0,l2=0;
     struct Node *temp1=head1;
     struct Node *temp2=head2;
-    //finding lengths of 2 linked list
-    while(temp1->next!=NULL)
+    while(temp1->next!=NULL)//calculating lengths of two linked lists
     {
         l1++;
         temp1=temp1->next;
@@ -69,25 +74,83 @@ int intersectPoint(Node* head1, Node* head2,int intersectVal)
         l2++;
         temp2=temp2->next;
     }
-    
     struct Node *tem1=head1;
     struct Node *tem2=head2;
     if(l1>l2)
+    {
         for(int i=0;i<(l1-l2);i++)
+        {
             tem1=tem1->next;
+        }
+    }
     else
+    {
         for(int i=0;i<(l2-l1);i++)
+        {
             tem2=tem2->next;
-            
-    //finding intersection point
+        }
+    }
     while(tem1->next!=NULL && tem2->next!=NULL)
     {
         tem1=tem1->next;
         tem2=tem2->next;
-        if((tem1->data==tem2->data) && (tem1->data==intersectVal))
+        if(tem1==tem2)
+        {
             return tem1->data;
+        }
     }
     return -1;
 }
+
+
+int main()
+{
+    	int n1,n2,n3;
+		cout<<"Enter size of 1st linked list : "; 
+        cin>>n1;
+        cout<<"Enter size of 2st linked list : "; 
+		cin>>n2;
+		cout<<"Enter size of common linked list : "; 
+		cin>>n3;
+        
+        cout<<"Enter first linked list : ";
+        Node* head1 = inputList(n1);
+        cout<<"Enter second linked list : ";
+		Node* head2 = inputList(n2);
+		cout<<"Enter common linked list : ";
+        Node* common = inputList(n3);
+        
+        Node* temp = head1;
+        while(temp!=NULL && temp->next != NULL)
+            temp = temp->next;
+        if(temp!=NULL) temp->next = common;
+        
+        temp = head2;
+        while(temp!=NULL && temp->next != NULL)
+            temp = temp->next;
+        if(temp!=NULL) temp->next = common;
+        
+        cout <<"Intersection point : "<< intersectPoint(head1, head2) << endl;
+    return 0;
+}
+/*
+Test case 1:
+3 1 2
+3 6 9
+10
+15 30
+Intersection point : 15
+========================
+Test case 2:
+3 2 3
+4 1 2
+3 4
+8 4 5
+Intersection point : 8
+========================
+Expected Time Complexity: O(N+M)
+Expected Auxiliary Space: O(1)
+*/
+
 
 
