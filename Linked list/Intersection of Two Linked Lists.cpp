@@ -58,13 +58,17 @@ Node* inputList(int size)
     return head;
 }
 
-//Function to find intersection point in Y shaped Linked Lists.
+//	Function to find intersection point in Y shaped Linked Lists.
+//	Here, length of both the linked list is calculated as l1 and l2 .
+//	Later, the list with bigger length is traversed by absolute value of 
+//	(l1-l2) times.
+
 int intersectPoint(Node* head1, Node* head2)
 {
     int l1=0,l2=0;
     struct Node *temp1=head1;
     struct Node *temp2=head2;
-    while(temp1->next!=NULL)//calculating lengths of two linked lists
+    while(temp1->next!=NULL)
     {
         l1++;
         temp1=temp1->next;
@@ -74,6 +78,7 @@ int intersectPoint(Node* head1, Node* head2)
         l2++;
         temp2=temp2->next;
     }
+//    tem1 and tem2 are 2 pointers pointing to head1 and head2 of two linked list respectively.
     struct Node *tem1=head1;
     struct Node *tem2=head2;
     if(l1>l2)
@@ -90,6 +95,9 @@ int intersectPoint(Node* head1, Node* head2)
             tem2=tem2->next;
         }
     }
+    /*Now, both the lists are at equal distance from the intersecting point.
+	tem1 and tem2 are skipped one by one and if address of both the nodes get equal at any instance then 
+	that value of that node will be returned as output. */
     while(tem1->next!=NULL && tem2->next!=NULL)
     {
         tem1=tem1->next;
@@ -105,6 +113,10 @@ int intersectPoint(Node* head1, Node* head2)
 
 int main()
 {
+//		Size of 3 linked list are taken as input (say, n1,n2,n3)
+//		n1-size of first linked list-size of linked list that is common to both
+//		n2-size of first linked list-size of linked list that is common to both
+//		n3-size of the coomon linked list
     	int n1,n2,n3;
 		cout<<"Enter size of 1st linked list : "; 
         cin>>n1;
@@ -112,19 +124,20 @@ int main()
 		cin>>n2;
 		cout<<"Enter size of common linked list : "; 
 		cin>>n3;
-        
+//        Taking input of each linked list by inputList function defined above.
         cout<<"Enter first linked list : ";
         Node* head1 = inputList(n1);
         cout<<"Enter second linked list : ";
 		Node* head2 = inputList(n2);
 		cout<<"Enter common linked list : ";
         Node* common = inputList(n3);
-        
+//		The common linked list is appended after both the lists.
+//		temp is a pointer pointing to head1 i.e head of first linked list 
         Node* temp = head1;
         while(temp!=NULL && temp->next != NULL)
             temp = temp->next;
         if(temp!=NULL) temp->next = common;
-        
+//		temp is a pointer pointing to head2 i.e head of second linked list         
         temp = head2;
         while(temp!=NULL && temp->next != NULL)
             temp = temp->next;
