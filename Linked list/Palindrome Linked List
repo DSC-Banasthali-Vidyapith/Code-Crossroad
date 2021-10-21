@@ -1,0 +1,58 @@
+##Given the head of a singly linked list, return true if it is a palindrome.
+
+Example 1:
+
+Input: head = [1,2,2,1]
+Output: true
+
+Example 2:
+
+Input: head = [1,2]
+Output: false
+ 
+Constraints:
+
+The number of nodes in the list is in the range [1, 105].
+0 <= Node.val <= 9
+ 
+Solution - 
+
+class listNode
+{
+    int value;
+    listNode next;
+    listNode(int x)
+    {
+        value = x;
+        next = null;
+    }
+}
+class palindrome_linked_list
+{
+    static listNode front;
+    public static void main(String args[])
+    {
+        listNode head = new listNode(1);
+        head.next = new listNode(2);
+        head.next.next = new listNode(3);
+        head.next.next.next = new listNode(2);
+        head.next.next.next.next = new listNode(1);
+        System.out.println((isPalindrome(head)) ? "true" : "false");
+    }
+    static boolean palindromeCheck(listNode head)
+    {
+        if(head == null)
+            return true;
+        if(!palindromeCheck(head.next))
+            return false;
+        if(front.value != head.value)
+            return false;
+        front = front.next;
+        return true;
+    }
+    static boolean isPalindrome(listNode head)
+    {
+        front = head;
+        return palindromeCheck(head);
+    }
+}
