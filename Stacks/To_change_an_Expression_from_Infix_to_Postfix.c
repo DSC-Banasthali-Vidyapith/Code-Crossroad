@@ -126,7 +126,7 @@ void main()
 INPUT 1:
 Enter an Infix expression: a*(b+c)
 
-OUTPUT 2:
+OUTPUT 1:
 Its Post fix expression is: abc+*
 
 INPUT 2:
