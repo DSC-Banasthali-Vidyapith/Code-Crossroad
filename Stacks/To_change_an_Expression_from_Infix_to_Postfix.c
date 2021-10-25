@@ -49,7 +49,7 @@ char pop()    //pop function
 	{ 
 		printf("stack under flow: invalid infix expression");
 	    /* underflow may occur because of invalid expression */
-	    exit(1);
+	   
 	}
 	else
 	{
@@ -118,7 +118,7 @@ void main()
       //printing all the remaining elements in the stack
       printf("%c ",pop());
     }
-return 0;
+
     
 }  //end of main
 
