@@ -116,5 +116,7 @@ public boolean isPalindromeReverse(ListNode head)
 
 //Input: head = [1,2]
 //Output: false
- 
+
+//Time Complexity - O(N)
+//Space Complexity - O(1)
  
