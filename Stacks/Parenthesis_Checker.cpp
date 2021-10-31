@@ -1,95 +1,52 @@
-/*  We are going to solve this question using Stack. If the current character is ‘(‘ or ‘{‘ or ‘[‘ then push it to stack otherwise pop it and check
-whether the popped bracket is corresponding starting bracket of the current character, then it is fine otherwise that is not balanced.*/
+// C++ code to check balanced parenthesis
 
-#include <iostream>
-#include <stack>
-
+#include
+#include //to use strlen(), we need to include this header
 using namespace std;
+char st[20];
+int top=-1;
 
-//Boolean Function to check the given expression if it is valid or not
-bool check_parenthesis(string str) 			 
+void push(char a)
 {
-	stack <char> s;
-
-	for(int i=0; i<str.length(); i++)
-	{
-		if(str[i]=='(' || str[i]=='[' || str[i]=='{' )
-		{
-			//Push the element into stack
-			s.push(str[i]);    					
-		}
-
-		else
-		{
-			switch(str[i])
-			{
-				case ')':
-				 if(s.empty() || s.top()!='(')
-				 {
-				 	return false;
-				 }
-				 else
-				 {
-				    s.pop();      
-				 }
-				 
-				 break;
-
-				case ']':
-				  if(s.empty() || s.top()!='[')
-				  {
-				  	return false;
-				  }
-				  else
-				 {
-				    s.pop();      
-				 }
-				 
-				  break;
-
-				case '}':
-				 if(s.empty() || s.top()!='{')
-				 {
-				 	return false;
-				 }
-				 else
-				 {
-				    s.pop();      
-				 }
-				 
-				 break;
-				 
-				default: ;
-			}
-		}
-	}
-	
-	//Check if the stack is empty
-	return s.empty();
-
+st[++top]=a;
+}
+char pop()
+{
+return st[top–];
 }
 
 int main()
 {
-
-	string exp;
-	cin>>exp;
-	
-	//Calling the function
-	if (check_parenthesis(exp))   			 
-      cout << "true";
-   else
-      cout << "false";
+char a[20],t;
+int i,f=1;
+cout<<“Enter the String: “;
+cin>>a;
+for(i=0;i<strlen(a);i++)
+{
+if(a[i]=='(‘ || a[i]=='{‘ || a[i]=='[‘)
+push(a[i]);
+if(a[i]==’)’ || a[i]==’}’ ||a[i]==’]’)
+{
+if(top==-1)
+f=0;
+else
+{
+t=pop();
+if(a[i]==’)’ && (t=='[‘ || t=='{‘))
+f=0;
+if(a[i]==’}’ && (t=='(‘ || t=='[‘))
+f=0;
+if(a[i]==’]’ && (t=='{‘ || t=='(‘))
+f=0;
 }
-
-/* Input : [(a+b)]
-   Output:  True
-
-   Input : [)]
-   Output:  False
- 
-   Time Complexity : O(n)
-   Space Complexity : O(n). */
-	
-
+}
+}
+if(top>=0)
+f=0;
+if(f==0)
+cout<<“Unbalanced”;
+else
+cout<<“Balanced”;
+return 0;
+}
 
